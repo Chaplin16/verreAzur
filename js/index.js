@@ -53,7 +53,7 @@ necklace.addEventListener("click", function(event) {
 //disappear select after 500px
 let select = document.getElementById("select")
 window.onscroll = function () {
-    if(document.documentElement.scrollTop > 40){
+    if(document.documentElement.scrollTop > 60){
         select.style.display = "none";
     } else{
         select.style.display = "flex";

@@ -8,7 +8,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  z-index: 1;
+  z-index: 5;
 }
 .navbar .navbar-toggler {
   border-color: #fff;
@@ -40,6 +40,7 @@ aside .rotate {
   margin-left: 30%;
   display: flex;
   padding-top: 6rem;
+  line-height: 1rem;
 }
 
 .position {
@@ -48,8 +49,17 @@ aside .rotate {
   padding-top: 14.5rem;
 }
 
-.card {
-  object-fit: cover;
+#place_cards {
+  overflow: hidden !important;
+}
+#place_cards .card {
+  transform: scale(1);
+  filter: brightness(1);
+  transition: transform 300ms !important;
+}
+#place_cards .card:hover {
+  filter: brightness(1.2);
+  transform: scale(1.08) !important;
 }
 
 #necklace,
@@ -73,7 +83,56 @@ aside .rotate {
   object-fit: cover;
 }
 
-@media all and (min-width: 992px) {
+.text {
+  margin-left: 22% !important;
+  font-size: 1.3rem;
+}
+
+footer {
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+footer .director {
+  line-height: 1rem;
+}
+footer a:hover {
+  color: #4871e2 !important;
+}
+
+.contactDetail {
+  top: 100px;
+  z-index: 3;
+}
+.contactDetail .town, .contactDetail .phone {
+  font-size: 0.8rem !important;
+}
+
+.contact {
+  flex-direction: column;
+}
+
+@media all and (max-width: 520px) {
+  .text {
+    margin-left: 26% !important;
+    font-size: 1.2rem;
+  }
+}
+@media all and (min-width: 670px) {
+  footer {
+    flex-direction: row !important;
+  }
+
+  .jewelry_set img {
+    width: 280px !important;
+    height: 250px !important;
+  }
+
+  .contactDetail .town,
+.contactDetail .phone {
+    font-size: 1rem !important;
+  }
+}
+@media all and (min-width: 950px) {
   .select p {
     padding-right: 2rem;
   }
@@ -95,6 +154,10 @@ aside .rotate {
   .jewelry_set img {
     width: 500px !important;
     height: 400px !important;
+  }
+
+  .text {
+    margin-left: 16% !important;
   }
 }
 
