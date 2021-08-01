@@ -26,8 +26,8 @@ const rings = [
     },
     {
         id:6,
-        attachment: "images/ring/ring_violet.jpeg",
-        alt:"bague violette et argent à l'atelier de Maria à Aigues Mortes"
+        attachment: "images/ring/ring_blue.png",
+        alt:"bague plaqué or avec pierre bleu à l'atelier de Maria à Aigues Mortes"
     },
     {
         id:7,

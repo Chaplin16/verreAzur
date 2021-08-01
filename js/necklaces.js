@@ -65,12 +65,17 @@ const necklaces = [
         alt:"collier en argent 925 avec médaillon en verre bleu à l'atelier VERRE AZUR "
     },
     {
-        id:14,
+        id:15,
         attachment:"images/necklace/necklace_blue-silver.jpeg",
         alt:"collier en argent 925 avec médaillon en verre bleu pastel chez Maria"
     },
     {
-        id:15,
+        id:16,
+        attachment:"images/necklace/necklace_trio_mosaique.png",
+        alt:"collier en argent 925 avec médaillon en verre bleu pastel chez Maria"
+    },
+    {
+        id:17,
         attachment:"images/necklace/necklace_blue-tiles.jpeg",
         alt:"collier en argent 925 avec plusieurs médaillons en verre bleu, crée par Maria à Aigues-Mortes"
     }
