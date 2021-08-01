@@ -8,6 +8,7 @@ html{
     background-size: cover;
     background-attachment:fixed;
     z-index:5;
+    padding : 1.5rem;
     & .navbar-toggler{
         border-color: #fff;
         &:focus{
@@ -17,6 +18,10 @@ html{
     & .navbar-brand:hover,
     & .nav-link:hover{
         color:#4871e2!important;
+    }
+    & .navbar-collapse{
+        max-height: 3.5rem!important;
+        line-height: 1.2rem;
     }
 }
 aside { 
@@ -79,8 +84,8 @@ aside {
 }
 
 .text{
-    margin-left: 22%!important;
-    font-size: 1.3rem;
+    margin-left: 26%!important;
+    font-size: 1.2rem;
 }
 
 footer{
@@ -94,7 +99,6 @@ footer{
     }
 }
 
-
 //page de contact
 .contactDetail{
     top:100px;
@@ -107,13 +111,54 @@ footer{
 .contact{
     flex-direction: column;
 }
-
-
-@media all and (max-width:520px){
+@media all and (max-width:400px){
+    .contactDetail{
+        & .town, 
+        & .phone{
+            font-weight: normal!important;
+            & svg{
+                display: none;
+            }
+        }
+    }
+    aside { 
+        width: 40px!important;
+        font-size:0.9rem!important;
+    }
+    main .jewelry_set{
+        margin-top:1rem;
+        & img{
+            width: 224px!important;
+            padding-right: 10%;
+        
+        }
+    }
     .text{
-        margin-left: 26%!important;
-        font-size:1.2rem;
-     }
+        font-size: 1.1rem;
+        padding: 1rem!important;
+    }
+}
+
+@media all and (max-width:490px){
+    .contactDetail{
+        padding-left:0!important;
+        padding-right: 2px!important;
+        & .town, 
+        & .phone{
+            font-size: 0.8rem!important;
+        }
+    }
+    .jewelry_set{
+        & img{
+            width: 150px!important;
+            height:200px!important;
+        }
+    }
+    aside { 
+        width: 60px;
+        height: 330px!important;
+    }
+
 }
 
 @media all and (min-width:670px){
@@ -127,6 +172,9 @@ footer{
     .contactDetail .town, 
     .contactDetail .phone{
         font-size: 1rem!important;
+    }
+    .text{
+        margin-left:20%!important;
     }
 }
 
