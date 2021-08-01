@@ -71,12 +71,27 @@ const necklaces = [
     },
     {
         id:16,
-        attachment:"images/necklace/necklace_trio_mosaique.png",
-        alt:"collier en argent 925 avec médaillon en verre bleu pastel chez Maria"
+        attachment:"images/necklace/necklace_blue-tiles.jpeg",
+        alt:"collier en argent 925 avec plusieurs médaillons en verre bleu, crée par Maria à Aigues-Mortes"
     },
     {
         id:17,
-        attachment:"images/necklace/necklace_blue-tiles.jpeg",
-        alt:"collier en argent 925 avec plusieurs médaillons en verre bleu, crée par Maria à Aigues-Mortes"
+        attachment:"images/necklace/necklace_circle_green.jpeg",
+        alt:"collier avec un cercle et une pierre en verre verte, crée par Maria à Aigues-Mortes"
+    },
+    {
+        id:18,
+        attachment:"images/necklace/necklace_circle_pink.jpeg",
+        alt:"collier avec un cercle et une pierre en verre rose, crée par Maria à VERRE AZUR"
+    },
+    {
+        id:19,
+        attachment:"images/necklace/necklace_circle_pink_string.jpeg",
+        alt:"chaînette avec un cercle et un epierre rose, crée par Maria à Aigues-Mortes"
+    },
+    {
+        id:20,
+        attachment:"images/necklace/necklace_2_leaves.jpeg",
+        alt:"collier avec deux feuilles plaquées OR, exposé à VERRE AZUR"
     }
 ]

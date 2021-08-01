@@ -55,6 +55,7 @@ aside {
  #place_cards{
     overflow: hidden!important;
     & .card{
+        object-fit: cover;
         transform: scale(1);
         filter: brightness(1);
         transition: transform 300ms!important;
