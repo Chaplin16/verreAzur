@@ -9,7 +9,7 @@ html {
   background-size: cover;
   background-attachment: fixed;
   z-index: 5;
-  padding: 1.1rem;
+  padding: 1.4rem;
 }
 .navbar .navbar-toggler {
   border-color: #fff;
@@ -152,6 +152,10 @@ footer a:hover {
 
   .select {
     padding-top: 5rem;
+  }
+
+  .position {
+    padding-right: 10%;
   }
 }
 @media all and (max-width: 490px) {
