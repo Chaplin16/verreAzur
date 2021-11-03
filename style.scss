@@ -1,5 +1,8 @@
 html{
     font-size: 1.2rem;
+    box-sizing: border-box;
+    width:100%;
+    max-width:100%;
 }
 .navbar{
     top:0;
@@ -30,8 +33,11 @@ aside {
     left: 0px;
     width: 80px;
     height: 358px;
-    & a:hover{
-        color: #4871e2!important;
+    & a{
+        color: #4dc0d4!important;
+        &:hover{
+            color: #4871e2!important;
+        }
     }
     & .rotate{
         writing-mode: vertical-lr;
@@ -79,8 +85,13 @@ aside {
 .jewelry_set{
     display: flex;
     margin-left:5rem;
+    
     & img{
         object-fit: cover;
+        max-width: 8rem;
+        max-height: 8rem;
+        width:8rem;
+        height: 8rem;
     }
 }
 
@@ -95,8 +106,14 @@ footer{
     & .director {
         line-height: 1rem;;
     }
-    & a:hover{
-        color:#4871e2!important;
+    & a{
+        color:#fa6bcf!important;
+        &:hover{
+            color: rgb(34, 183, 228)!important;
+        }
+    }
+    & .law{
+        color: #fff!important;
     }
 }
 
@@ -122,7 +139,7 @@ footer{
     object-fit: cover;
 }
 
-@media all and (max-width:400px){
+@media all and (max-width:490px){
     .contactDetail{
         & .town, 
         & .phone{
@@ -136,9 +153,11 @@ footer{
         width: 40px!important;
         font-size:0.9rem!important;
     }
-    main .jewelry_set img{
-        width: 225px!important;
-        padding-right: 10%;
+    main .jewelry_set{
+        margin-left: 3rem;
+        & img{
+            width: 250px!important;
+        }
     }
     .text{
         font-size: 1.1rem;
@@ -150,9 +169,12 @@ footer{
     .position{
         padding-right: 10%;
     }
+    .footer{
+        flex-direction: column;
+    }
 }
 
-@media all and (max-width:490px){
+@media all and (max-width:380px){
     .contactDetail{
         padding-left:0!important;
         padding-right: 2px!important;
@@ -177,10 +199,16 @@ footer{
 @media all and (min-width:670px){
     footer{
         flex-direction: row!important;
+        .prime{
+            width: 10rem!important;
+            height: auto;
+        }
     }
     .jewelry_set img{
-        width: 280px!important;
-        height: 250px!important;
+        max-width: 12rem;
+        max-height: 12rem;
+        width:12rem;
+        height:12rem;
     }
     .contactDetail .town, 
     .contactDetail .phone{
@@ -200,21 +228,15 @@ footer{
     }
     .jewelry_set{
         & img{
-            width: 400px!important;
-            height:320px!important;
+            width: 16rem;
+            height:16rem;
+            max-width: 16rem;
+            max-height: 16rem;
         }
     }
 }
 
 @media all and (min-width: 1300px){
-    .jewelry_set {
-        max-width: 1100px;
-        margin: auto;
-        & img{
-            width: 500px!important;
-            height: 400px!important;
-        }
-    }
     .text{
        margin-left: 16%!important;;
     }

@@ -1,5 +1,8 @@
 html {
   font-size: 1.2rem;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
 }
 
 .navbar {
@@ -31,6 +34,9 @@ aside {
   left: 0px;
   width: 80px;
   height: 358px;
+}
+aside a {
+  color: #4dc0d4 !important;
 }
 aside a:hover {
   color: #4871e2 !important;
@@ -87,6 +93,10 @@ aside .rotate {
 }
 .jewelry_set img {
   object-fit: cover;
+  max-width: 8rem;
+  max-height: 8rem;
+  width: 8rem;
+  height: 8rem;
 }
 
 .text {
@@ -101,8 +111,14 @@ footer {
 footer .director {
   line-height: 1rem;
 }
+footer a {
+  color: #fa6bcf !important;
+}
 footer a:hover {
-  color: #4871e2 !important;
+  color: #22b7e4 !important;
+}
+footer .law {
+  color: #fff !important;
 }
 
 .contactDetail {
@@ -127,7 +143,7 @@ footer a:hover {
   object-fit: cover;
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 490px) {
   .contactDetail .town, .contactDetail .phone {
     font-weight: normal !important;
   }
@@ -140,9 +156,11 @@ footer a:hover {
     font-size: 0.9rem !important;
   }
 
+  main .jewelry_set {
+    margin-left: 3rem;
+  }
   main .jewelry_set img {
-    width: 225px !important;
-    padding-right: 10%;
+    width: 250px !important;
   }
 
   .text {
@@ -157,8 +175,12 @@ footer a:hover {
   .position {
     padding-right: 10%;
   }
+
+  .footer {
+    flex-direction: column;
+  }
 }
-@media all and (max-width: 490px) {
+@media all and (max-width: 380px) {
   .contactDetail {
     padding-left: 0 !important;
     padding-right: 2px !important;
@@ -183,10 +205,16 @@ footer a:hover {
   footer {
     flex-direction: row !important;
   }
+  footer .prime {
+    width: 10rem !important;
+    height: auto;
+  }
 
   .jewelry_set img {
-    width: 280px !important;
-    height: 250px !important;
+    max-width: 12rem;
+    max-height: 12rem;
+    width: 12rem;
+    height: 12rem;
   }
 
   .contactDetail .town,
@@ -208,20 +236,13 @@ footer a:hover {
   }
 
   .jewelry_set img {
-    width: 400px !important;
-    height: 320px !important;
+    width: 16rem;
+    height: 16rem;
+    max-width: 16rem;
+    max-height: 16rem;
   }
 }
 @media all and (min-width: 1300px) {
-  .jewelry_set {
-    max-width: 1100px;
-    margin: auto;
-  }
-  .jewelry_set img {
-    width: 500px !important;
-    height: 400px !important;
-  }
-
   .text {
     margin-left: 16% !important;
   }
